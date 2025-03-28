@@ -92,7 +92,12 @@ dotnet user-secrets set "ServiceBus:SubscriptionName" "subscriptorNomina"
 ## 📬 Cómo Probar
 
 1. Ejecuta el proyecto **Publicador**.
-2. Envia una solicitud POST usando Postman o Swagger:
+![image](https://github.com/user-attachments/assets/97037849-6b15-4a79-812b-9371aace171b)
+
+2. Envia una solicitud POST usando Postman o Swagger 
+![image](https://github.com/user-attachments/assets/3a40612d-20eb-4fad-a938-96226177e691)
+
+![image](https://github.com/user-attachments/assets/baba40fc-56ae-4a7e-a3cd-66f1230a9ead)
 
 ```
 POST http://localhost:{puerto}/api/PagoDeNomina/send
@@ -108,7 +113,14 @@ Body (JSON):
 ```
 
 3. Ejecuta el proyecto **Subscriptor**.
-4. Verás en consola que el mensaje fue recibido y procesado correctamente.
+   
+En el visual studio 2022 dar click derecho sobre el proyecto "Subscriptor" y seleccionar la opción
+Debug - Start New Instance
+
+![image](https://github.com/user-attachments/assets/beee3ea0-dc3f-4cf2-9a16-b47099ef1574)
+
+5. Verás en consola que el mensaje fue recibido y procesado correctamente.
+![image](https://github.com/user-attachments/assets/2b1c384d-4c15-4014-8d81-e3ae9922d7d2)
 
 ---
 
